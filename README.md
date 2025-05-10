@@ -14,7 +14,7 @@ A scalable, high-performance React starter template powered by **Vite**, **TypeS
 
 ## 🗂️ Folder Structure
 
-Well described structure you can find here: [`structure-guide.md`](./structure-guide.md)
+Well described structure you can find here: [`structure-guide.md`](structure-guide.md)
 
 ## 🚀 Getting Started
 
