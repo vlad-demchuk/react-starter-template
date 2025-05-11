@@ -23,3 +23,4 @@ Well described structure you can find here: [`structure-guide.md`](structure-gui
 ```bash
 git clone https://github.com/your-username/vite-react-ts-feature-template.git
 cd vite-react-ts-feature-template
+```

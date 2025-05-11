@@ -45,6 +45,7 @@ Contains reusable components that are shared across multiple features or pages.
 - Export components as default exports, and re-export them as named exports from an index.tsx file for better autocompletion
 
 Example:
+
 ```tsx
 // Good
 const Button = () => {...}
@@ -62,6 +63,7 @@ Contains custom React hooks that can be reused across the application.
 - Export hooks as default exports, and re-export them as named exports from an index.ts file for better autocompletion
 
 Example:
+
 ```tsx
 export function useLocalStorage() {...}
 // index.ts
@@ -114,7 +116,7 @@ Contains utility functions that are used across the application.
 
 - Functions should be pure and focused on a single task
 - Group related utilities in a single file (e.g., `date.ts`, `string.ts`)
-- Export functions as named exports 
+- Export functions as named exports
 - Re-export functions from an index.ts for cleaner path (optional)
 
 ### `state/`
@@ -149,6 +151,7 @@ Contains shared TypeScript type definitions.
 Contains feature-specific code organized into self-contained units.
 
 Each feature folder can contain its own:
+
 - Components
 - Hooks
 - State
@@ -188,20 +191,24 @@ export type { UserProfileExtended } from './types';
 ## Best Practices
 
 1. **Naming Conventions**
+
    - Use PascalCase for component files and folders (e.g., `Button.tsx`)
    - Use camelCase for utility files, hooks, and non-component files (e.g., `useLocalStorage.ts`, `formatDate.ts`)
    - Use kebab-case for feature folders and asset files (e.g., `users`, `hero-image.png`)
 
 2. **Imports**
+
    - Use absolute imports for better readability and to avoid deep nesting issues
    - Group imports by type (React, third-party, internal)
 
 3. **Component Structure**
+
    - Keep components focused on a single responsibility
    - Extract complex logic into custom hooks
    - Use TypeScript props interfaces for better documentation and type safety
 
 4. **Code Splitting**
+
    - Consider code splitting for large features or pages
    - Use dynamic imports for routes that aren't immediately needed
 
@@ -219,6 +226,7 @@ Create a new feature when you have a set of components, hooks, and utilities tha
 4. Are complex enough to benefit from isolation
 
 Examples of good feature candidates:
+
 - users
 - shopping-cart
 - notifications
