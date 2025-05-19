@@ -4,7 +4,7 @@ A scalable, high-performance React starter template powered by **Vite**, **TypeS
 
 ## 🔧 Features
 
-- ⚡  **Vite v6** – Lightning fast build tool with hot module replacement
+- ⚡ **Vite v6** – Lightning fast build tool with hot module replacement
 - 🔄 **React v19** – Latest version of the popular UI library
 - 📦 **TypeScript v5.8** – Static typing and enhanced developer experience
 - 🧱 **Feature-based architecture** – Scalable folder structure
@@ -90,6 +90,7 @@ pnpm build
 Contributions are welcome and appreciated! Here's how you can contribute:
 
 ### 1. Fork the Repository
+
 1. Click the "Fork" button at the top right of this repository
 2. Clone your forked repository to your local machine
 

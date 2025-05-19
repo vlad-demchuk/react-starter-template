@@ -1,10 +1,11 @@
+import AppRouter from '@/routes/AppRouter.tsx';
 import '@/styles/global.css';
 
 /**
  * Main application component
  */
 const App = () => {
-  return <>Vite + React + TS Starter template</>;
+  return <AppRouter />;
 };
 
 export default App;

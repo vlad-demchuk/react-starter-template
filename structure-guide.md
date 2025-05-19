@@ -12,6 +12,7 @@ src/
 ├── hooks/         # Shared React hooks
 ├── pages/         # Page components (e.g., for routing)
 ├── layouts/       # Layout components
+├── routes/        # Routing configuration and utilities
 ├── data/          # Static data or temporary mocks
 ├── services/      # API service logic
 ├── lib/           # External libraries or wrappers
@@ -84,6 +85,27 @@ Contains layout components that wrap pages with common elements like headers, fo
 
 - Layouts should accept children props to render the page content
 - Keep layouts focused on structure rather than specific content
+
+### `routes/`
+
+Contains routing configuration, route constants, and routing-related utilities.
+
+- `AppRouter.tsx`: Main router configuration using a routing library
+- `routeHelpers.tsx`: Helper utilities for routing (e.g. lazy loading routes)
+- `paths.ts`: Centralized location for all route path constants
+
+The `paths.ts` file contains an object with all application route paths, which helps prevent hardcoding path strings throughout the application:
+
+```tsx
+// Example of paths.ts
+export const routePaths = {
+  home: '/',
+  notFound: '*',
+  // other routes...
+} as const;
+```
+
+Using the routePaths object makes your routes more maintainable and provides better type safety when referencing routes.
 
 ### `data/`
 
