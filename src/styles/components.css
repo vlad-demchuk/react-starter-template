@@ -1,0 +1,28 @@
+@layer components {
+  /* Define button base styles first */
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors;
+  }
+
+  /* Then use them in other button variants */
+  .btn-primary {
+    @apply px-4 py-2 rounded-md font-medium transition-colors bg-indigo-600 text-white hover:bg-indigo-700;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 rounded-md font-medium transition-colors bg-white text-indigo-600 border border-indigo-600 hover:bg-indigo-50;
+  }
+
+  /* Card components */
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+
+  .card-hover {
+    @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow;
+  }
+
+  .card-interactive {
+    @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer;
+  }
+}
