@@ -1,7 +1,8 @@
-import { createBrowserRouter, RouterProvider } from 'react-router';
+import { RouterProvider, createBrowserRouter } from 'react-router';
+
 import { MainLayout } from '@/layouts';
-import { lazyRoute, withFallback } from '@/routes/routeHelpers.tsx';
 import { routePaths } from '@/routes/paths';
+import { lazyRoute, withFallback } from '@/routes/routeHelpers.tsx';
 
 const appRouter = createBrowserRouter([
   {

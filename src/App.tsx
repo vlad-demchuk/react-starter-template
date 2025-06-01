@@ -1,4 +1,5 @@
 import AppRouter from '@/routes/AppRouter.tsx';
+
 import '@/styles/global.css';
 
 /**
